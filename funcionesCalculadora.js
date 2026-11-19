@@ -55,3 +55,24 @@ function calculateSquareRoot(num) {
 
 console.log(calculateSquareRoot(25))
 console.log(calculateSquareRoot(100))
+
+//boolean checking functions
+
+function booWho(bool) {
+  return typeof bool === "boolean";
+}
+
+console.log(booWho(true)); // true
+console.log(booWho(false)); // true
+console.log(booWho(1)); // false
+console.log(booWho("true")); // false
+
+// Mask email function
+
+function maskEmail(email){
+  const [localPart, domain] = email.split("@");
+  const maskedLocal = localPart[0] + "*".repeat(localPart.length - 2) + localPart[localPart.length - 1];
+  return `${maskedLocal}@${domain}`;
+}
+const email = "apple.pie@example.com";
+console.log(maskEmail(email));
