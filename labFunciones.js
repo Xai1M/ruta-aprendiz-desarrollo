@@ -57,4 +57,23 @@ function checkStringEnding(str, target) {
  function confirmEnding(str, target) {
   return str.slice(-target.length) === target;
  }
- //
+
+ // truncate a string
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+}
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+
+// v2
+function truncateStringV2(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+}
+console.log(truncateStringV2("Peter Piper picked a peck of pickled peppers", 11));
