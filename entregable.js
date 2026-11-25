@@ -81,3 +81,7 @@ function esMultiploDeCinco(numero) {
 // Ejemplo de uso
 console.log(esMultiploDeCinco(25));
 console.log(esMultiploDeCinco(12));  
+
+
+
+
